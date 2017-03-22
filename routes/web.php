@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/** @noinspection PhpUndefinedMethodInspection */
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

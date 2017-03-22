@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'StaticPageControl@home');
+Route::get('/help', 'StaticPageControl@help');
+Route::get('/about', 'StaticPageControl@about');
 /** @noinspection PhpUndefinedMethodInspection */
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+

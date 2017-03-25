@@ -18,4 +18,7 @@ Route::get('/about', 'StaticPageControl@about');
 Auth::routes();
 Route::get('signup','UserControl@create');
 Route::get('/home', 'HomeController@index');
+Route::resource('user','UserControl');
+
+
 

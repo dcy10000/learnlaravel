@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArticleTable extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +12,12 @@ class CreateArticleTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function(Blueprint $table)
-        {
+        Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->text('body')->nullable();
-            $table->integer('user_id');
+            $table->string('name');
+            $table->string('email',50)->unique();
+            $table->string('password', 60);
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -30,7 +29,6 @@ class CreateArticleTable extends Migration
      */
     public function down()
     {
-        Schema::drop('articles');
-        //
+        Schema::drop('users');
     }
 }

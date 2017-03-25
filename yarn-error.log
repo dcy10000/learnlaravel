@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install --no-bin-links
+
+PATH: 
+  C:\Users\dcy\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\dcy\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\DTS\Binn;C:\Program Files\TortoiseSVN\bin;F:\wamp64\bin\php\php7.1.2;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Users\dcy\AppData\Local\Microsoft\WindowsApps;C:\Users\dcy\AppData\Roaming\Composer\vendor\bin;C:\Users\dcy\AppData\Roaming\npm;C:\Users\dcy\AppData\Local\Yarn\.bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  0.21.3
+
+Node version: 
+  6.10.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "dev": "node node_modules/cross-env/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "watch": "node node_modules/cross-env/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "watch-poll": "node node_modules/cross-env/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "hot": "node node_modules/cross-env/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+      "production": "node node_modules/cross-env/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+      "axios": "^0.15.3",
+      "bootstrap-sass": "^3.3.7",
+      "jquery": "^3.1.1",
+      "laravel-mix": "^0.8.1",
+      "lodash": "^4.17.4",
+      "vue": "^2.1.10"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/jquery: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 1080 1080:80
+      at ClientRequest.onError (C:\Program Files (x86)\Yarn\node_modules\tunnel-agent\index.js:176:17)
+      at ClientRequest.g (events.js:291:16)
+      at emitOne (events.js:96:13)
+      at ClientRequest.emit (events.js:188:7)
+      at Socket.socketErrorListener (_http_client.js:309:9)
+      at emitOne (events.js:96:13)
+      at Socket.emit (events.js:188:7)
+      at connectErrorNT (net.js:1025:8)
+      at _combinedTickCallback (internal/process/next_tick.js:80:11)
+      at process._tickCallback (internal/process/next_tick.js:104:9)

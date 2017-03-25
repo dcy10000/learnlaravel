@@ -16,6 +16,6 @@ Route::get('/help', 'StaticPageControl@help');
 Route::get('/about', 'StaticPageControl@about');
 /** @noinspection PhpUndefinedMethodInspection */
 Auth::routes();
-
+Route::get('signup','UserControl@create');
 Route::get('/home', 'HomeController@index');
 
